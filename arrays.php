@@ -12,12 +12,12 @@
         <h1>Arrays no PHP</h1>
         <hr>
 
-    </div>
+    
 
 <?php
 
     // Existe 2 tipos de Arrays
-    //Array / Tradicional
+    //Array númerico / indexado
 
 $frutas = ["Morango", "Banana", "Uva" , "Laranja"];
 $cursos = array("Node.js" , "Design", "Nutriçao");
@@ -28,5 +28,39 @@ $cursos = array("Node.js" , "Design", "Nutriçao");
     <h2>Acessando os dados do array</h2>
     <!-- chamando o array -->
     <p>Frutas da época: <?=$frutas[2]?></p> 
+    <p>Ontem estivemos com a turma de <?=$cursos[2]?></p>
+
+
+    <hr>
+<?php
+//Array associativo
+
+$filme = [
+    // chave associativa
+    "titulo" => "Senhor dos Anéis",
+    "Autor" => "J.R.R Tolkien",
+    "lancamento" => 2001,
+    "genero" => "Fantasia"
+
+];
+
+?>
+
+    <h2>Acessando os dados do Array Associativo</h2>
+    <p>O filme <span class="bg-success"><?=$filme["titulo"]?></span> foi lançado 
+    em <span class="bg-danger"><?=$filme["lancamento"]?></span>. </p>
+
+    <h2>Comandos úteis (para programador)para análise de arrays</h2>
+
+    <!-- Como se fosse no console log -->
+    <h3>print_r(nomeArray)</h3>
+    <pre><?=print_r($frutas)?></pre>
+
+    <!-- tag <pre> melhora a identação pra visualizar os arrays -->
+    <h3>var_dump(nomeArray)</h3>
+    <pre><?=var_dump($frutas)?></pre>
+
+
+    </div>
 </body>
 </html>
