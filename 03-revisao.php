@@ -29,5 +29,7 @@
         Olá! Meu nome é <i class="text-danger"><?=NOME?></i> 
         e tenho <span class="bg-warning"><?=$idade?></span> anos. 
     </p>
+
+    
 </body>
 </html>
