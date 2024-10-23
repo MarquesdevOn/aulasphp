@@ -1,0 +1,49 @@
+O código PHP começa com <?php e termina com ?>. 
+Qualquer coisa entre essas tags é interpretada como código PHP.
+
+<?php
+echo "Olá, Mundo!";
+?>
+
+//echo é uma construção em PHP usada para exibir dados na tela.
+
+Variáveis
+As variáveis em PHP começam com o símbolo $ e 
+podem armazenar diferentes tipos de dados (strings, números, arrays, etc.).
+
+$nome = "João";
+$idade = 25;
+
+
+Estruturas de Controle
+PHP suporta estruturas condicionais (if, else) e 
+loops (for, while) para controlar o fluxo do código.
+
+if ($idade >= 18) {
+    echo "Você é maior de idade.";
+} else {
+    echo "Você é menor de idade.";
+}
+
+Funções
+Funções são blocos de código que podem ser reutilizados. 
+Você pode criar suas próprias funções ou usar funções embutidas.
+
+function saudacao($nome) {
+    return "Olá, " . $nome . "!";
+}
+
+echo saudacao("Maria");
+
+
+Manipulação de Formulários
+PHP é frequentemente usado para processar dados de formulários. 
+Você pode usar $_POST e $_GET para acessar dados enviados.
+
+Usar php só pra variaveis, abreviado
+
+para variavel:
+<?=$curso?>
+
+para const:
+<?=COST?>
