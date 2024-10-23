@@ -9,19 +9,22 @@
 <body style="text-align: center; background-color:antiquewhite">
     <div class="container">
         <h1 style="background-color: gray;">Comandos condicionais no php</h1>
+        <p style="background-color: yellow;"><i>(Versão refatorada)</i></p>
         <hr>
 
 
-        <h2 style="background-color: aqua;">Condicional simples</h2>
+        <h2 style="background-color: aqua;">Condicional Simples</h2>
 <?php
 $numero = 500;
 // O comando echo em PHP é utilizado para imprimir ou exibir texto e variáveis na saída padrão, que geralmente é o navegador quando estamos desenvolvendo aplicações web. É uma das maneiras mais comuns de enviar dados para a tela.
 
 
 if($numero >= 100){
-    echo "<p>O valor da variável é $numero</p>";
 
+?>  
+    <p>O valor da variável é <?=$numero?></p>
 
+<?php
 }
 
 ?>
@@ -48,14 +51,19 @@ $qtd_critica = 2; // minimo necessario
 <?php
 // Se a quantidade em estoque for abaixo da quantidade, o sistema deve avisar e pedir para repor
 if($qtd_estoque < $qtd_critica){
-    echo "<p class='alert alert-danger'>É necessário repor! </p>";
+?>
+    <p style='color:red'>É necessário repor! </p>
+<?php
 
 }else{
-// Caso contrário, simplesmente avisar que o estoque está normal
-
-    echo "<p class='alert alert-success'>Estoque normal</p>";
-}
 ?>
+ <!-- Caso contrário, simplesmente avisar que o estoque está normal -->
+
+    <p style="color: blue;">Estoque normal</p>
+<?php // abre php
+}
+// fecha php
+?>  
 
     <hr style="color: blue;">
     <h2 style="background-color: beige;">Condicional Encadeado</h2>
