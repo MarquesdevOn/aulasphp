@@ -61,6 +61,7 @@ $filme = [
     <pre><?=var_dump($frutas)?></pre>
 
 
+    <?php include "resdessociais.html"?>
     </div>
 </body>
 </html>
